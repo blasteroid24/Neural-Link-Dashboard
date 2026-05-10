@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://bizzertech-loadbalancer-449057035.ap-south-1.elb.amazonaws.com/api/:path*"
+    },
+    {
+      "source": "/api-docs/:path*",
+      "destination": "http://bizzertech-loadbalancer-449057035.ap-south-1.elb.amazonaws.com/api-docs/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "http://bizzertech-loadbalancer-449057035.ap-south-1.elb.amazonaws.com/health"
+    },
+    {
+      "source": "/db",
+      "destination": "http://bizzertech-loadbalancer-449057035.ap-south-1.elb.amazonaws.com/db"
+    }
+  ]
+}
